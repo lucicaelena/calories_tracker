@@ -82,7 +82,7 @@ def add_food():
         print(request.form['meal'])
         db.session.add(food)
         db.session.commit()
-        return redirect('/')
+        return redirect('/log_food')
 
 
 if __name__ == '__main__':
